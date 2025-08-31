@@ -1,19 +1,12 @@
 'use client'
 import { useEffect, useState } from 'react';
+import { alphabetSoundPairs } from '@/constants/alphabet';
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
   useEffect(() => {
     setIsClient(true);
   }, []);
-
-  const alphabetSoundPairs = [
-    { letter: 'A', image: '/letters/Aa.png', sound: '/sounds/a.mp3' },
-    { letter: 'B', image: '/letters/Bb.png', sound: '/sounds/b.mp3' },
-    { letter: 'C', image: '/letters/Cc.png', sound: '/sounds/c.mp3' },
-    { letter: 'D', image: '/letters/Dd.png', sound: '/sounds/d.mp3' },
-    // Add more letters here...
-  ];
 
   const playSound = (sound: string) => {
     const audio = new Audio(sound);
