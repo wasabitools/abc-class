@@ -24,9 +24,9 @@ export default function LetterButton({ image, letter, sound }: LetterButtonProps
         <button
             aria-label={`Play sound for letter ${letter}`}
             onClick={() => isClient && playSound()}
-            className="w-20 h-20 rounded-full border-4 border-purple-400 flex items-center justify-center bg-white shadow-lg hover:shadow-xl transition-all transform hover:scale-105 ripple"
+            className="w-8 h-8 rounded-full border-4 border-purple-400 flex items-center justify-center bg-white shadow-lg hover:shadow-xl transition-all transform hover:scale-105 ripple"
         >
-            <img src={image} alt={letter}  className="w-full h-full object-cover rounded-full" />
+            <img src={image} alt={letter}  className="w-8 h-8 object-cover rounded-full" />
         </button>
 
     )
