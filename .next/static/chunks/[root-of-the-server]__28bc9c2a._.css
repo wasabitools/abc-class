@@ -499,6 +499,18 @@
 @layer components;
 
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
   .row-start-2 {
     grid-row-start: 2;
   }
@@ -509,6 +521,10 @@
 
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
+  }
+
+  .contents {
+    display: contents;
   }
 
   .flex {
